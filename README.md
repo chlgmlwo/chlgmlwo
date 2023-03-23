@@ -24,4 +24,5 @@
 <a href="s">
   <img src="https://github-readme-stats.vercel.app/api?username=chlgmlwo&theme=midnight-purple&show_icons=true" width="42%" />
 </a>
-(https://activity-graph.herokuapp.com/graph?username=chlgmlwo&theme=nord)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![trophy](https://github-profile-trophy.vercel.app/?username=chlgmlwo&theme=flat&column=7)](https://github.com/dkssud8150/)
+
