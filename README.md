@@ -1,3 +1,5 @@
-![header](https://capsule-render.vercel.app/api?type=Waving&color=hexacode000000&text=Welcome!&fontColor=8000FF&fontAlign=78)
+![header](https://capsule-render.vercel.app/api?type=soft&color=hexacode000000&text=Welcome!&fontColor=8000FF&fontAlign=78&animation=fadeIn)
 
+<a href="https://instagram.com/gmlwo_00?igshid=YmMyMTA2M2Y="><img src="https://img.shields.io/badge/Instagram-#E4405F
+?style=flat&logo=Instagram&logoColor=white&link=https://instagram.com/gmlwo_00?igshid=YmMyMTA2M2Y="/></a>&nbsp
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=chlgmlwo&show_icons=true&theme=midnight-purple)
