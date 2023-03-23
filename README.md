@@ -15,7 +15,7 @@
 <h3 align="center"> Follow Me </h3>
 <p align="center">
   <a href="https://instagram.com/gmlwo_00?igshid=YmMyMTA2M2Y="><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=Instagram&logoColor=white&link=https://instagram.com/gmlwo_00?igshid=YmMyMTA2M2Y="/></a>&nbsp
-      <a href="https://itr1823er@naver.com?igshid=YmMyMTA2M2Y="><img src="https://img.shields.io/badge/Naver-03C75A?style=flat-square&logo=Email&logoColor=white&link=https://itr1823er@naver.com?igshid=YmMyMTA2M2Y="/></a>&nbsp
+      <a href="https://itr1823er@naver.com?igshid=YmMyMTA2M2Y="><img src="https://img.shields.io/badge/Email-03C75A?style=flat-square&logo=Naver&logoColor=white&link=https://itr1823er@naver.com?igshid=YmMyMTA2M2Y="/></a>&nbsp
 </p>
 
 <h3 align="center"> My Github Stats </h3>
