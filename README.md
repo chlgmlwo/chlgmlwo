@@ -1,6 +1,6 @@
 ![header](https://capsule-render.vercel.app/api?type=soft&color=hexacode000000&text=Welcome!&fontColor=8000FF&fontAlign=78&animation=fadeIn)
 </p>
-####  :wave: Welcome my github profile !
+
 
 <h3 align="center"> Learning About </h3>
 <p align="center">
@@ -18,6 +18,5 @@
 </p>
 
 <h3 align="center"> My Github Stats </h3>
-<h3 align="center"> 
-    ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=chlgmlwo&show_icons=true&theme=midnight-purple)
-</h3>
+<div align=center>
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=chlgmlwo&show_icons=true&theme=midnight-purple)  </div>
