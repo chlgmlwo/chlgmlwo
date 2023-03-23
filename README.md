@@ -21,3 +21,6 @@
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=chlgmlwo&hide_title=true&show_icons=true&include_all_commits=true&disable_animations=true&theme=midnight-purple)](https://github.com/anuraghazra/github-readme-stats)
 </div>
+<a href="s">
+  <img src="https://github-readme-stats.vercel.app/api?username=dkssud8150&theme=tokyonight&show_icons=true" width="42%" />
+</a>
