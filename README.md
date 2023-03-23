@@ -19,6 +19,3 @@
 
 <h3 align="center"> My Github Stats </h3>
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=chlgmlwo&show_icons=true&theme=midnight-purple)
-</p>
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chlgmlwo&layout=compact&theme=midnight-purple)
-
