@@ -24,5 +24,4 @@
 <a href="s">
   <img src="https://github-readme-stats.vercel.app/api?username=chlgmlwo&theme=midnight-purple&show_icons=true" width="42%" />
 </a>
-[![trophy](https://github-profile-trophy.vercel.app/?username=chlgmlwo&theme=flat&column=7)](https://github.com/dkssud8150/)
-
+[![GitHub Streak](https://streak-stats.demolab.com/?user=chlgmlwo&currStreakNum=2FD3EB&fire=pink&sideLabels=F00&date_format=[Y.]n.j)](https://git.io/streak-stats)
