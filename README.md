@@ -18,7 +18,7 @@
 </p>
 <h3 align="center"> My Github Stats </h3>
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=midnight-purple)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=chlgmlwo&show_icons=true&theme=midnight-purple)
 
 <a href="s">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chlgmlwo&exclude_repo=dkssud8150.github.io&layout=compact&theme=tokyonight" />
