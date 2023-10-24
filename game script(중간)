@@ -1,0 +1,137 @@
+scene 전환 스크립트
+
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class SceneChanger : MonoBehaviour
+{
+    public string start;
+
+    public void ChangeScene()
+    {
+        SceneManager.LoadScene(start);
+    }
+}
+
+무한 맵 생성 스크립트
+맵 조각들을 만들어 붙이는 방식
+
+맵 조각 스크립트
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ObjectPool : MonoBehaviour
+{
+    public GameObject prefab;
+    public int poolSize = 5;
+
+    private Queue<GameObject> pool = new Queue<GameObject>();
+
+    void Start()
+    {
+        for (int i = 0; i < poolSize; i++)
+        {
+            GameObject obj = Instantiate(prefab);
+            obj.SetActive(false);
+            pool.Enqueue(obj);
+        }
+    }
+
+    public GameObject GetFromPool()
+    {
+        if (pool.Count > 0)
+        {
+            GameObject obj = pool.Dequeue();
+            obj.SetActive(true);
+            return obj;
+        }
+        else
+        {
+            return Instantiate(prefab);
+        }
+    }
+
+    public void ReturnToPool(GameObject obj)
+    {
+        obj.SetActive(false);
+        pool.Enqueue(obj);
+    }
+}
+
+맵 조각 반복 스크립트(무한맵)
+using UnityEngine;
+
+public class InfiniteMap : MonoBehaviour
+{
+    public ObjectPool mapPiecePool;
+    public float pieceWidth = 10f;
+    public Transform player;
+
+    private void Update()
+    {
+        if (player.position.x > transform.position.x)
+        {
+            GameObject newPiece = mapPiecePool.GetFromPool();
+            newPiece.transform.position = transform.position + Vector3.right * pieceWidth;
+            transform.position += Vector3.right * pieceWidth;
+
+            GameObject oldPiece = transform.GetChild(0).gameObject;
+            mapPiecePool.ReturnToPool(oldPiece);
+        }
+    }
+}
+
+기본적 메인오브젝트 이동 스크립트
+using UnityEngine;
+
+public class ClickMoveController : MonoBehaviour
+{
+    public float speed = 5f;
+    public float jumpForce = 10f;
+    public LayerMask groundLayer;
+    public Transform groundCheck;
+    public float groundCheckRadius = 0.2f;
+
+    private Rigidbody2D rb;
+    private bool isGrounded;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    void Update()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            Move();
+        }
+    }
+
+    void Move()
+    {
+        rb.velocity = new Vector2(speed, rb.velocity.y);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+
+        if (!isGrounded)
+        {
+            rb.velocity += Vector2.up * jumpForce;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Boost"))
+        {
+            speed *= 1.5f;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Boost"))
+        {
+            speed /= 1.5f;
+        }
+    }
+}
