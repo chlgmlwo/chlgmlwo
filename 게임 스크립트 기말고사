@@ -12,6 +12,9 @@
 - 메인메뉴버튼
 - 다시하기버튼
 
+Bgm UI
+- bgm on/off기능
+
 인게임플레이
 - 플립을 성공하거나 일정 점프구간을 통과했을 경우 카운트되는 숫자
 - 맵에 부딪쳤을 경우 게임오버
@@ -487,3 +490,63 @@ public class RiderController : MonoBehaviour
         SceneManager.LoadScene("main"); // 메인 메뉴 씬 로드
     }
 }
+
+7. 오디오 매니저 스크립트
+
+using UnityEngine;
+
+public class AudioManager : MonoBehaviour
+{
+    public AudioSource audioSource; // 오디오 소스 컴포넌트
+
+    public void ToggleBgm()
+    {
+        if (audioSource.isPlaying)
+        {
+            audioSource.Stop(); // BGM 정지
+        }
+        else
+        {
+            audioSource.Play(); // BGM 재생
+        }
+    }
+}
+
+8. bgm 컨트롤러 스크립트
+
+using UnityEngine;
+
+public class BgmController : MonoBehaviour
+{
+    public AudioSource audioSource; // 인스펙터에서 할당
+    public bool bgmOn = true; // 인스펙터에서 토글 가능
+
+    void Start()
+    {
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
+
+        UpdateBgmState();
+    }
+
+    void Update()
+    {
+        // 필요하다면 여기에 추가적인 로직을 구현
+    }
+
+    public void UpdateBgmState()
+    {
+        if (bgmOn)
+        {
+            audioSource.Play();
+        }
+        else
+        {
+            audioSource.Stop();
+        }
+    }
+}
+
+
